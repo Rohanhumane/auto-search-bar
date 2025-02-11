@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# AutoComplete Search Bar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intuitive and responsive autocomplete search bar built with **React & TypeScript** that fetches recipe data from an API and provides a smooth user experience with caching and keyboard navigation.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Debounced API Requests**: Reduces API calls by implementing a delay when typing.
+- **Caching**: Stores previously searched results to minimize redundant API requests.
+- **Keyboard Navigation**: Navigate search results using **Arrow Up/Down** keys.
+- **Auto-selection**: Selecting an item updates the input field.
+- **Blur Handling**: Hides results when the input loses focus.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React** (useState, useEffect, useCallback)
+- **TypeScript** (for type safety)
+- **CSS Modules** (for styling)
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/autocomplete-search-bar.git
+   cd autocomplete-search-bar
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm start
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🔗 API Used
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+This project fetches recipes from [DummyJSON](https://dummyjson.com/recipes/search).
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📸 Screenshots
+
+_Add relevant screenshots here_
+
+## 🎯 Future Enhancements
+
+- Add **mouse selection** for search results.
+- Improve **accessibility** (ARIA attributes).
+- Implement **better error handling** for API failures.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you’d like to improve this project, feel free to fork the repository and create a pull request.
+
+## 📜 License
+
+This project is licensed under the MIT License. Feel free to use and modify it as needed.
+
+---
+
+Happy coding! 🚀
+
+
