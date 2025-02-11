@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.searchImg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  top: 55%;
+  padding: 10px;
+  top: 40px;
+  display: flex;
+  justify-content: left;
+}
+
+.search-container {
+  list-style-type: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-height: 300px;
+  text-align: left;
+  padding-right: 20px;
+  overflow-y: scroll;
+}
+
+.search-result {
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 0;
+  cursor: pointer;
+  color: #52188c;
+}
+
+.search-result:hover {
+  background-color: #f9f9f9;
+}
+
+.selected {
+  background-color: #f2e9e9;
+}
